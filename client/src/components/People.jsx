@@ -4,7 +4,7 @@ import axios from 'axios';
 import Error from "./Error"
 
 
-const People = (props) => {
+const People = () => {
     const { id } = useParams();
 
     const [info, setInfo] = useState([]);
