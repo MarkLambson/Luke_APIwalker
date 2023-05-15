@@ -4,18 +4,6 @@ import axios from 'axios'
 const Error = () => {
     const [errorMessage, setErrorMessage] = useState([]);
 
-    useEffect(() => {
-        //I thought we had to display Obi Wan from the API for the error at first, not an img we chose
-        axios.get("https://swapi.dev/api/people/10/")
-            .then((response) => {
-                setErrorMessage(response.data);
-            })
-            .catch((error) => {
-                //log error to see easier
-                console.log("this is our catch-all ERROR message:", error);
-            })
-    }, [])
-
     return (
         <div>
             <h1>This isn't the page you were looking for! Move along...</h1>

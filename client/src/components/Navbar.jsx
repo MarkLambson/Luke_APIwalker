@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
     const [resource, setResource] = useState('people');
-    const [selectedId, setSelectedId] = useState(1);
+    const [selectedId, setSelectedId] = useState(0);
 
     return (
         <div>
