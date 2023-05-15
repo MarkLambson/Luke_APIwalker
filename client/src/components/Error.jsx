@@ -11,6 +11,7 @@ const Error = () => {
                 setErrorMessage(response.data);
             })
             .catch((error) => {
+                //log error to see easier
                 console.log("this is our catch-all ERROR message:", error);
             })
     }, [])

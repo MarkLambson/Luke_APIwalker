@@ -8,8 +8,10 @@ import Planet from './components/Planet';
 function App() {
   return (
       <div className="App">
+        {/* nav bar displayed on all pages */}
         <NavBar />
         <Routes>
+          {/* star wars pic for home page */}
           <Route path="/" element={<img src="https://www.giantfreakinrobot.com/wp-content/uploads/2022/06/hellotherethumb.jpg" alt="hello" height="400px" />} />
           <Route path="/people/:id" element={<People />} />
           <Route path='/planet/:id'element={<Planet />} />
