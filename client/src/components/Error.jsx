@@ -5,6 +5,7 @@ const Error = () => {
     const [errorMessage, setErrorMessage] = useState([]);
 
     useEffect(() => {
+        //I thought we had to display Obi Wan from the API for the error at first, not an img we chose
         axios.get("https://swapi.dev/api/people/10/")
             .then((response) => {
                 setErrorMessage(response.data);
