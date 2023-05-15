@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useState } from 'react'
 
 const Error = () => {
-    const [errorMessage, setErrorMessage] = useState([]);
-
+    // const [errorMessage, setErrorMessage] = useState([]);
     return (
         <div>
             <h1>This isn't the page you were looking for! Move along...</h1>
